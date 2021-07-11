@@ -1,0 +1,1187 @@
+{
+	"info": {
+		"_postman_id": "60a43c67-ecda-4284-a539-4deeed21aa85",
+		"name": "Informasi Tugas Akhir",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fakultas",
+			"item": [
+				{
+					"name": "Get Fakultas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNjI1OTg4MDUyLCJqdGkiOiIyMGNlOWZkMS0wYmJjLTRjZDQtODYxMi1iNTdiODBhOTIwZmYiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjp7ImlkX2FkbWluIjo0LCJ1c2VybmFtZV9hZG1pbiI6ImFkbWluIiwibmFtYV9hZG1pbiI6IkFkbWluIiwiZm90b19hZG1pbiI6ImFkbWluL2FkbWluLmpwZyIsImNyZWF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCIsInVwZGF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCJ9LCJuYmYiOjE2MjU5ODgwNTIsImV4cCI6MTYyNjU5Mjg1Mn0.FDNygzArGl5Hs2XrIq62_YakWpndTAvwmGZ91UOyrY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/fakultas/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"fakultas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Fakultas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/fakultas/7",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"fakultas",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Fakultas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/fakultas/7",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"fakultas",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Fakultas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "kode_fakultas",
+									"value": "FASILKOM",
+									"type": "text"
+								},
+								{
+									"key": "nama_fakultas",
+									"value": "FAKULTAS ILMU KOMPUTER",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/fakultas/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"fakultas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Fakultas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "kode_fakultas",
+									"value": "FASILKOM",
+									"type": "text"
+								},
+								{
+									"key": "nama_fakultas",
+									"value": "FAKULTAS ILMU KOMPUTER",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/fakultas/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"fakultas",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prodi",
+			"item": [
+				{
+					"name": "Get Prodi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/prodi/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prodi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Prodi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/prodi/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prodi",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Prodi",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/prodi/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prodi",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Prodi",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "kode_prodi",
+									"value": "TI",
+									"type": "text"
+								},
+								{
+									"key": "nama_prodi",
+									"value": "TEKNIK INFORMATIKA",
+									"type": "text"
+								},
+								{
+									"key": "id_fakultas",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/prodi/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prodi",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Prodi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "kode_prodi",
+									"value": "TI",
+									"type": "text"
+								},
+								{
+									"key": "nama_prodi",
+									"value": "TEKNIK INFORMATIKA",
+									"type": "text"
+								},
+								{
+									"key": "id_fakultas",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/prodi/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"prodi",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dosen",
+			"item": [
+				{
+					"name": "Get Dosen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/dosen/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"dosen",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Dosen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/dosen/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"dosen",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Dosen",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/dosen/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"dosen",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Dosen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nip_dosen",
+									"value": "1970",
+									"type": "text"
+								},
+								{
+									"key": "nama_dosen",
+									"value": "DOSEN TI",
+									"type": "text"
+								},
+								{
+									"key": "id_fakultas",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "id_prodi",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/dosen/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"dosen",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Dosen",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nip_dosen",
+									"value": "1970",
+									"type": "text"
+								},
+								{
+									"key": "nama_dosen",
+									"value": "DOSEN TI",
+									"type": "text"
+								},
+								{
+									"key": "id_fakultas",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "id_prodi",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/dosen/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"dosen",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mahasiswa",
+			"item": [
+				{
+					"name": "Get Mahasiswa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/mahasiswa/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"mahasiswa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Mahasiswa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/mahasiswa/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Mahasiswa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/mahasiswa/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Mahasiswa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim_mahasiswa",
+									"value": "0987",
+									"type": "text"
+								},
+								{
+									"key": "nama_mahasiswa",
+									"value": "MAHASISWA TI",
+									"type": "text"
+								},
+								{
+									"key": "angkatan_mahasiswa",
+									"value": "2017",
+									"type": "text"
+								},
+								{
+									"key": "id_fakultas",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "id_prodi",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/mahasiswa/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"mahasiswa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Mahasiswa",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim_mahasiswa",
+									"value": "0987",
+									"type": "text"
+								},
+								{
+									"key": "nama_mahasiswa",
+									"value": "MAHASISWA TI",
+									"type": "text"
+								},
+								{
+									"key": "angkatan_mahasiswa",
+									"value": "2017",
+									"type": "text"
+								},
+								{
+									"key": "id_fakultas",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "id_prodi",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/mahasiswa/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tugas Akhir",
+			"item": [
+				{
+					"name": "Tugas Akhir",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNjI2MDAwMTA2LCJqdGkiOiI0NmIxNmRlZC0xYWQ2LTRiZjctOGJlMi00NWQ4ODMyYTBhYTQiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjp7ImlkX2FkbWluIjo0LCJ1c2VybmFtZV9hZG1pbiI6ImFkbWluIiwibmFtYV9hZG1pbiI6IkFkbWluIEVkaXQiLCJmb3RvX2FkbWluIjoiRmxhc2stOTgzZTRjM2ItYmMyNS00YjNmLTk3M2ItOGJiMGRhZTkxZWJlaWNhaXNkLnBuZyIsImNyZWF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCIsInVwZGF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCJ9LCJuYmYiOjE2MjYwMDAxMDYsImV4cCI6MTYyNjYwNDkwNn0.X_anFdRCjuJ1YC7otEwGONpVUreo7bvOfAtwU7whB_s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tugasakhir/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tugasakhir",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Tugas Akhir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "judul_tugasakhir",
+									"value": "Hybrid Cryptosystem menggunakan Blowfish dan RSA(Rivest Shamir Adleman) untuk Penyimpanan Online Berbasis Android",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_tugasakhir",
+									"value": "2021-06-27",
+									"type": "text"
+								},
+								{
+									"key": "status_tugasakhir",
+									"value": "BELUMSELESAI",
+									"type": "text"
+								},
+								{
+									"key": "id_mahasiswa",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "id_dosen",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "id_fakultas",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "id_prodi",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tugasakhir/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tugasakhir",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tugas Akhir",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "judul_tugasakhir",
+									"value": "Edit Hybrid Cryptosystem menggunakan Blowfish dan RSA(Rivest Shamir Adleman) untuk Penyimpanan Online Berbasis Android",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_tugasakhir",
+									"value": "2021-06-27",
+									"type": "text"
+								},
+								{
+									"key": "status_tugasakhir",
+									"value": "BELUMSELESAI",
+									"type": "text"
+								},
+								{
+									"key": "id_mahasiswa",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "id_dosen",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "id_fakultas",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "id_prodi",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tugasakhir/11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tugasakhir",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Tugas Akhir",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tugasakhir/11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tugasakhir",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cari Tugas Akhir",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tugasakhir/cari/hybrid",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tugasakhir",
+								"cari",
+								"hybrid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Mahasiswa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tugasakhir/11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tugasakhir",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autentikasi",
+			"item": [
+				{
+					"name": "Set Admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/admin/setadmin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"setadmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username_admin",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password_admin",
+									"value": "adminadmin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/admin/loginadmin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"loginadmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Admin Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNjI1OTg4MDUyLCJqdGkiOiIyMGNlOWZkMS0wYmJjLTRjZDQtODYxMi1iNTdiODBhOTIwZmYiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjp7ImlkX2FkbWluIjo0LCJ1c2VybmFtZV9hZG1pbiI6ImFkbWluIiwibmFtYV9hZG1pbiI6IkFkbWluIiwiZm90b19hZG1pbiI6ImFkbWluL2FkbWluLmpwZyIsImNyZWF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCIsInVwZGF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCJ9LCJuYmYiOjE2MjU5ODgwNTIsImV4cCI6MTYyNjU5Mjg1Mn0.FDNygzArGl5Hs2XrIq62_YakWpndTAvwmGZ91UOyrY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password_admin_lama",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password_admin_baru",
+									"value": "adminadmin",
+									"type": "text"
+								},
+								{
+									"key": "password_admin_baru_2",
+									"value": "adminadmin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/admin/updatepassword",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"updatepassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Admin Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNjI1OTg4MDUyLCJqdGkiOiIyMGNlOWZkMS0wYmJjLTRjZDQtODYxMi1iNTdiODBhOTIwZmYiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjp7ImlkX2FkbWluIjo0LCJ1c2VybmFtZV9hZG1pbiI6ImFkbWluIiwibmFtYV9hZG1pbiI6IkFkbWluIiwiZm90b19hZG1pbiI6ImFkbWluL2FkbWluLmpwZyIsImNyZWF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCIsInVwZGF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCJ9LCJuYmYiOjE2MjU5ODgwNTIsImV4cCI6MTYyNjU5Mjg1Mn0.FDNygzArGl5Hs2XrIq62_YakWpndTAvwmGZ91UOyrY8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_admin",
+									"value": "Admin Edit",
+									"type": "text"
+								},
+								{
+									"key": "foto_admin",
+									"value": "Flask-983e4c3b-bc25-4b3f-973b-8bb0dae91ebeicaisd.png",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/admin/updateprofile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"updateprofile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload File",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNjI1OTk5MTEyLCJqdGkiOiI4NzAwNjBjZi05YjI4LTRhMTAtYTUwYS1kYWU2ZTgyNzYzZTMiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjp7ImlkX2FkbWluIjo0LCJ1c2VybmFtZV9hZG1pbiI6ImFkbWluIiwibmFtYV9hZG1pbiI6IkFkbWluIiwiZm90b19hZG1pbiI6ImFkbWluL2FkbWluLmpwZyIsImNyZWF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCIsInVwZGF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCJ9LCJuYmYiOjE2MjU5OTkxMTIsImV4cCI6MTYyNjYwMzkxMn0.NvC1_frHeBRQj5gD0yuyOFFpVr-whb-BUqaqzH7NTpE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/aldiariq/Documents/icaisd.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/admin/uploadfile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"uploadfile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Endpoint Utama",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNjI1OTg2NDE3LCJqdGkiOiIxYzdjMmQ0NS0wNGEwLTQxZDctYmNhNy0wZTg1NTY5MWVmOGUiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjp7ImlkX2FkbWluIjo0LCJ1c2VybmFtZV9hZG1pbiI6ImFkbWluIiwibmFtYV9hZG1pbiI6IkFkbWluIiwiZm90b19hZG1pbiI6ImFkbWluL2FkbWluLmpwZyIsImNyZWF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCIsInVwZGF0ZWRfYXQiOiJTdW4sIDExIEp1bCAyMDIxIDAzOjQ3OjQzIEdNVCJ9LCJuYmYiOjE2MjU5ODY0MTcsImV4cCI6MTYyNjU5MTIxN30.aKKpiJvJZTCuAH8He5TQZS-2MGH019icChg3hPnP03U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
